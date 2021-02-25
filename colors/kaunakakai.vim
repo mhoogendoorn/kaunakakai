@@ -220,8 +220,8 @@ hi LspDiagnosticsFloatingHint        guifg=#e6db74 guibg=NONE
 hi LspDiagnosticsFloatingInformation guifg=#66d9ef guibg=NONE
 hi LspDiagnosticsSignError       guifg=#f92672 guibg=#3b3a32 gui=bold,italic
 hi LspDiagnosticsSignWarning     guifg=#fd971f guibg=#3b3a32 gui=bold,italic
-hi LspDiagnosticsSignInformation guifg=#e6db74 guibg=#3b3a32 gui=bold,italic
-hi LspDiagnosticsSignHint        guifg=#66d9ef guibg=#3b3a32 gui=bold,italic
+hi LspDiagnosticsSignHint        guifg=#e6db74 guibg=#3b3a32 gui=bold,italic
+hi LspDiagnosticsSignInformation guifg=#66d9ef guibg=#3b3a32 gui=bold,italic
 
 if has('nvim')
   " highlight the line number, do not place an actual sign
