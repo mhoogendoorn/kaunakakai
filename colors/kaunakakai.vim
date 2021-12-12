@@ -221,8 +221,10 @@ hi LspDiagnosticsSignError       guifg=#f86882 guibg=#393230 gui=bold,italic
 hi LspDiagnosticsSignWarning     guifg=#f08d71 guibg=#393230 gui=bold,italic
 hi LspDiagnosticsSignHint        guifg=#f0c66f guibg=#393230 gui=bold,italic
 hi LspDiagnosticsSignInformation guifg=#81d0c9 guibg=#393230 gui=bold,italic
-hi LspCodeLens         ctermfg=242     ctermbg=NONE    cterm=bold,italic
-hi LspCodeLens           guifg=#90817b   guibg=NONE      gui=bold,italic
+hi LspCodeLens          ctermfg=242     ctermbg=NONE    cterm=bold,italic
+hi LspCodeLens            guifg=#90817b   guibg=NONE      gui=bold,italic
+hi LspCodeLensSeparator ctermfg=242     ctermbg=NONE    cterm=NONE
+hi LspCodeLensSeparator   guifg=#90817b   guibg=NONE      gui=NONE
 
 if has('nvim')
   " highlight the line number, do not place an actual sign
