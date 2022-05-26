@@ -201,35 +201,36 @@ hi StatusLineModeI guifg=#ffffff guibg=#75daa9 gui=bold
 hi StatusLineModeV guifg=#ffffff guibg=#9fa0e1 gui=bold
 hi StatusLineModeR guifg=#ffffff guibg=#f86882 gui=bold
 hi StatusLineModeC guifg=#ffffff guibg=#f08d71 gui=bold
-hi StatusLineLspDiagnosticsError       guifg=#f86882 guibg=#786761 gui=bold
-hi StatusLineLspDiagnosticsWarning     guifg=#f08d71 guibg=#786761 gui=bold
-hi StatusLineLspDiagnosticsHint        guifg=#f0c66f guibg=#786761 gui=bold
-hi StatusLineLspDiagnosticsInformation guifg=#81d0c9 guibg=#786761 gui=bold
-hi LspDiagnosticsUnderlineError       gui=undercurl guisp=#f86882
-hi LspDiagnosticsUnderlineWarning     gui=undercurl guisp=#f08d71
-hi LspDiagnosticsUnderlineHint        gui=undercurl guisp=#f0c66f
-hi LspDiagnosticsUnderlineInformation gui=undercurl guisp=#81d0c9
-hi LspDiagnosticsVirtualTextError       guifg=#f86882 guibg=NONE
-hi LspDiagnosticsVirtualTextWarning     guifg=#f08d71 guibg=NONE
-hi LspDiagnosticsVirtualTextHint        guifg=#f0c66f guibg=NONE
-hi LspDiagnosticsVirtualTextInformation guifg=#81d0c9 guibg=NONE
-hi LspDiagnosticsFloatingError       guifg=#f86882 guibg=NONE
-hi LspDiagnosticsFloatingWarning     guifg=#f08d71 guibg=NONE
-hi LspDiagnosticsFloatingHint        guifg=#f0c66f guibg=NONE
-hi LspDiagnosticsFloatingInformation guifg=#81d0c9 guibg=NONE
-hi LspDiagnosticsSignError       guifg=#f86882 guibg=#393230 gui=bold,italic
-hi LspDiagnosticsSignWarning     guifg=#f08d71 guibg=#393230 gui=bold,italic
-hi LspDiagnosticsSignHint        guifg=#f0c66f guibg=#393230 gui=bold,italic
-hi LspDiagnosticsSignInformation guifg=#81d0c9 guibg=#393230 gui=bold,italic
+hi StatusLineDiagnosticError   guifg=#f86882 guibg=#786761 gui=bold
+hi StatusLineDiagnosticWarn    guifg=#f08d71 guibg=#786761 gui=bold
+hi StatusLineDiagnosticInfo    guifg=#f0c66f guibg=#786761 gui=bold
+hi StatusLineDiagnosticHint    guifg=#81d0c9 guibg=#786761 gui=bold
+hi DiagnosticUnderlineError gui=undercurl guisp=#f86882
+hi DiagnosticUnderlineWarn  gui=undercurl guisp=#f08d71
+hi DiagnosticUnderlineInfo  gui=undercurl guisp=#f0c66f
+hi DiagnosticUnderlineHint  gui=undercurl guisp=#81d0c9
+hi DiagnosticVirtualTextError guifg=#f86882 guibg=NONE
+hi DiagnosticVirtualTextWarn  guifg=#f08d71 guibg=NONE
+hi DiagnosticVirtualTextInfo  guifg=#f0c66f guibg=NONE
+hi DiagnosticVirtualTextHint  guifg=#81d0c9 guibg=NONE
+hi DiagnosticFloatingError    guifg=#f86882 guibg=NONE
+hi DiagnosticFloatingWarn     guifg=#f08d71 guibg=NONE
+hi DiagnosticFloatingInfo     guifg=#f0c66f guibg=NONE
+hi DiagnosticFloatingHint     guifg=#81d0c9 guibg=NONE
+hi DiagnosticSignError        guifg=#f86882 guibg=#393230 gui=bold,italic
+hi DiagnosticSignWarn         guifg=#f08d71 guibg=#393230 gui=bold,italic
+hi DiagnosticSignInfo         guifg=#f0c66f guibg=#393230 gui=bold,italic
+hi DiagnosticSignHint         guifg=#81d0c9 guibg=#393230 gui=bold,italic
 hi LspCodeLens          ctermfg=242     ctermbg=NONE    cterm=bold,italic
 hi LspCodeLens            guifg=#90817b   guibg=NONE      gui=bold,italic
 hi LspCodeLensSeparator ctermfg=242     ctermbg=NONE    cterm=NONE
 hi LspCodeLensSeparator   guifg=#90817b   guibg=NONE      gui=NONE
+hi LightBulbSignText      guifg=#f0c66f   guibg=#393230   gui=NONE
 
 if has('nvim')
   " highlight the line number, do not place an actual sign
-  sign define LspDiagnosticsSignError       text= texthl= linehl= numhl=LspDiagnosticsSignError
-  sign define LspDiagnosticsSignWarning     text= texthl= linehl= numhl=LspDiagnosticsSignWarning
-  sign define LspDiagnosticsSignInformation text= texthl= linehl= numhl=LspDiagnosticsSignInformation
-  sign define LspDiagnosticsSignHint        text= texthl= linehl= numhl=LspDiagnosticsSignHint
+  sign define DiagnosticSignError text= texthl= linehl= numhl=DiagnosticSignError
+  sign define DiagnosticSignWarn  text= texthl= linehl= numhl=DiagnosticSignWarn
+  sign define DiagnosticSignInfo  text= texthl= linehl= numhl=DiagnosticSignInfo
+  sign define DiagnosticSignHint  text= texthl= linehl= numhl=DiagnosticSignHint
 endif
