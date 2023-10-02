@@ -205,18 +205,22 @@ hi StatusLineDiagnosticError   guifg=#f86882 guibg=#786761 gui=bold
 hi StatusLineDiagnosticWarn    guifg=#f08d71 guibg=#786761 gui=bold
 hi StatusLineDiagnosticInfo    guifg=#f0c66f guibg=#786761 gui=bold
 hi StatusLineDiagnosticHint    guifg=#81d0c9 guibg=#786761 gui=bold
+hi DiagnosticError guifg=#f86882 guibg=NONE
+hi DiagnosticWarn  guifg=#f08d71 guibg=NONE
+hi DiagnosticInfo  guifg=#f0c66f guibg=NONE
+hi DiagnosticHint  guifg=#81d0c9 guibg=NONE
 hi DiagnosticUnderlineError gui=undercurl guisp=#f86882
 hi DiagnosticUnderlineWarn  gui=undercurl guisp=#f08d71
 hi DiagnosticUnderlineInfo  gui=undercurl guisp=#f0c66f
 hi DiagnosticUnderlineHint  gui=undercurl guisp=#81d0c9
-hi DiagnosticVirtualTextError guifg=#f86882 guibg=NONE
-hi DiagnosticVirtualTextWarn  guifg=#f08d71 guibg=NONE
-hi DiagnosticVirtualTextInfo  guifg=#f0c66f guibg=NONE
-hi DiagnosticVirtualTextHint  guifg=#81d0c9 guibg=NONE
-hi DiagnosticFloatingError    guifg=#f86882 guibg=NONE
-hi DiagnosticFloatingWarn     guifg=#f08d71 guibg=NONE
-hi DiagnosticFloatingInfo     guifg=#f0c66f guibg=NONE
-hi DiagnosticFloatingHint     guifg=#81d0c9 guibg=NONE
+hi link DiagnosticVirtualTextError DiagnosticError
+hi link DiagnosticVirtualTextWarn  DiagnosticWarn
+hi link DiagnosticVirtualTextInfo  DiagnosticInfo
+hi link DiagnosticVirtualTextHint  DiagnosticHint
+hi link DiagnosticFloatingError    DiagnosticError
+hi link DiagnosticFloatingWarn     DiagnosticWarn
+hi link DiagnosticFloatingInfo     DiagnosticInfo
+hi link DiagnosticFloatingHint     DiagnosticHint
 hi DiagnosticSignError        guifg=#f86882 guibg=#393230 gui=bold,italic
 hi DiagnosticSignWarn         guifg=#f08d71 guibg=#393230 gui=bold,italic
 hi DiagnosticSignInfo         guifg=#f0c66f guibg=#393230 gui=bold,italic
