@@ -162,11 +162,11 @@ hi Typedef           guifg=#81d0c9   guibg=NONE      gui=NONE
 
 " Diff
 hi DiffAdd         ctermfg=NONE    ctermbg=237     cterm=NONE
-hi DiffAdd           guifg=NONE      guibg=#394634   gui=NONE
+hi DiffAdd           guifg=NONE      guibg=#2e3225   gui=NONE
 hi DiffChange      ctermfg=244     ctermbg=238     cterm=NONE
-hi DiffChange        guifg=NONE      guibg=#354157   gui=NONE
+hi DiffChange        guifg=NONE      guibg=#1e2632   gui=NONE
 hi DiffDelete      ctermfg=125     ctermbg=232     cterm=NONE
-hi DiffDelete        guifg=#90817b   guibg=#55393d   gui=NONE
+hi DiffDelete        guifg=#90817b   guibg=#322224   gui=NONE
 hi DiffText        ctermfg=NONE    ctermbg=238     cterm=italic,bold
 hi DiffText          guifg=NONE      guibg=#13354a   gui=italic,bold
 
